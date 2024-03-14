@@ -1,0 +1,17 @@
+﻿1. Zmieniono nazwę pliku 
+2. Usunięto pole printData z metody ImportAndPrintData, ponieważ wartość nie jest nigdzie używana i
+jeśli metoda ma służyć jak nazwa wskazuje do pobierania i wyświetlania danych to definiowanie tego pola jest nieuzasadnione. 
+Jeśli w programie dane będą w jednym miejscu tylko pobierane, a w innym pobierane i wyświetlane to należy stworzyć dwie metody,
+jedną tylko do pobierania drugą tylko do wyświetlania. 
+3. Usunięto znak <= i zastąpiono znakiem < aby wartość była mniejsza niż rozmiar kolekcji
+i żeby nie generowało wyjątku System.ArgumentOutOfRangeException "Indeks był spoza zakresu"
+4. Dodano warunek if, aby indeks nie wykarczał po za granicę tablicy 
+5. Zakomentowano fragment kodu odpowiedzialny za zliczanie baz danych i tabel oraz ich wyświetlanie, ponieważ kod obliczał i podawał złe wyniki zastąpiono ten 
+fragment poprawnie obliczającym i wyświetlającym dane. 
+6. Usunięto pole Name z klasy ImportedObject, ponieważ ta klasa dziedziczy po klasie ImportedObjectBaseClass, gdzie to pole jest już zdefiniowane 
+7. Zmieniono typ pola NumberOfChildren z double na int, ponieważ ta wartość zawsze będzie liczbą całkowitą 
+
+
+
+Wstawiłem komentarze w kodzie, gdzie wprowadzałem zmiany 
+
