@@ -12,7 +12,8 @@
         static void Main(string[] args)
         {
             var reader = new DataReader();
-            reader.ImportAndPrintData("data.csv"); // niepoprawna nazwa pliku, zmieniono z dataa.csv na data.csv 
+            reader.ImportData("data.csv");
+            reader.PrintData();
         }
     }
 }
